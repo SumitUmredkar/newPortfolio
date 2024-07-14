@@ -15,7 +15,7 @@ app
           end: "80% 12%"
         }
       })
-      .to(laptop.position, { x: -550, y: -1670 }, 0)
+      .to(laptop.position, { x: -520, y: -1570 }, 0)
       .to(laptop.rotation, { y: Math.PI / 1 }, 0)
       .to(laptop.scale, { x: 1.2, y: 1.2, z: 1.2 }, 0);
 
@@ -29,7 +29,7 @@ app
         }
       })
       .to(laptop.rotation, { y: Math.PI /0.8,z: Math.PI /1}, 0)
-      .to(laptop.position, { x: 300, y: -2300 }, 0);
+      .to(laptop.position, { x: 270, y: -2100 }, 0);
   });
 
 const heading = document.getElementById("heading");
