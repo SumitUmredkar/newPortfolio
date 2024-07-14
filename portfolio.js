@@ -29,7 +29,7 @@ app
         }
       })
       .to(laptop.rotation, { y: Math.PI /0.8,z: Math.PI /1}, 0)
-      .to(laptop.position, { x: 200, y: -2600 }, 0);
+      .to(laptop.position, { x: 300, y: -2300 }, 0);
   });
 
 const heading = document.getElementById("heading");
