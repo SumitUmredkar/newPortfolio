@@ -15,9 +15,9 @@ app
           end: "80% 12%"
         }
       })
-      .to(laptop.position, { x: -650, y: -1870 }, 0)
+      .to(laptop.position, { x: -550, y: -1670 }, 0)
       .to(laptop.rotation, { y: Math.PI / 1 }, 0)
-      .to(laptop.scale, { x: 1.4, y: 1.4, z: 1.4 }, 0);
+      .to(laptop.scale, { x: 1.2, y: 1.2, z: 1.2 }, 0);
 
     gsap.timeline({
         scrollTrigger: {
@@ -29,7 +29,7 @@ app
         }
       })
       .to(laptop.rotation, { y: Math.PI /0.8,z: Math.PI /1}, 0)
-      .to(laptop.position, { x: 400, y: -2700 }, 0);
+      .to(laptop.position, { x: 200, y: -2600 }, 0);
   });
 
 const heading = document.getElementById("heading");
