@@ -24,7 +24,7 @@ header {
   position: sticky;
   height: auto;
   width: auto;
-  gap: 10vw;
+  gap: 9vw;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ header a {
   margin: 15px 20px;
   text-decoration: none;
   color: antiquewhite;
-  font-size: x-large;
+  font-size:large;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -44,7 +44,7 @@ header a {
 #navigate {
   display: flex;
   flex-direction: column;
-  gap: 4vw;
+  gap: 3vw;
   align-items: flex-start;
   justify-content: space-evenly;
 }
@@ -90,7 +90,7 @@ header a:hover {
   font-weight: 600;
   font-style: normal;
   font-size: xxx-large;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 #name2 {
   color: white;
@@ -100,7 +100,7 @@ header a:hover {
   font-weight: 100;
   font-style: normal;
   font-size: xxx-large;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 }
 #info {
   overflow: hidden;
@@ -179,7 +179,7 @@ header a:hover {
   justify-content: center;
   height: 70vh;
   width: 60vw;
-  top: 2vw;
+  top: 5vw;
   /* left:2vw; */
   position: relative;
   z-index: 4;
@@ -190,7 +190,7 @@ header a:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: xxx-large;
+  font-size: xx-large;
   text-transform: capitalize;
 }
 #bio2 {
@@ -198,15 +198,15 @@ header a:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: xx-large;
+  font-size: x-large;
   text-align: center;
   padding: 10px;
 }
 #profile img{
   position: relative;
-  top:2vw;
+  top:5vw;
   border-radius: 20px;
-  height:70vh;
+  height:90vh;
   width:25vw;
   object-fit: cover;
 }
