@@ -1,11 +1,27 @@
+import * as THREE from 'three'; 
 import { Application } from "https://esm.sh/@splinetool/runtime";
 
 const canvas = document.getElementById("canvas3d");
 const app = new Application(canvas);
+gsap.to("canvas3d",{
+  x:100,
+  y:-900
+})
 app
   .load("https://prod.spline.design/ZMOBjX-ByeSbXJL8/scene.splinecode")
   .then(() => {
     const laptop = app.findObjectByName("macBook");
+    const group=app.findObjectByName("Group");
+    gsap.to(group.position,{
+      y:300,
+      x:150
+    })
+    gsap.to(group.scale,{
+      y:0.8,
+      x:0.8,
+      z:0.8
+    })
+    
     gsap.timeline({
         scrollTrigger: {
           trigger: "#arc",
@@ -13,8 +29,8 @@ app
           scrub: true,
           start: "40% 9%",
           end: "80% 12%"
-        }
-      })
+          }
+    })
       .to(laptop.position, { x: -520, y: -1570 }, 0)
       .to(laptop.rotation, { y: Math.PI / 1 }, 0)
       .to(laptop.scale, { x: 1.2, y: 1.2, z: 1.2 }, 0);
@@ -70,3 +86,4 @@ gsap.from("#navigate a", {
   duration: 1.4,
   stagger: 0.2,
 });
+
