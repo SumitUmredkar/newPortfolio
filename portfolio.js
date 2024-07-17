@@ -11,10 +11,10 @@ app
   .then(() => {
     const laptop = app.findObjectByName("macBook");
     const group=app.findObjectByName("Group");
-    gsap.to(group.position,{
-      y:-10,
-      x:-30
-    })
+    // gsap.to(group.position,{
+    //   y:-10,
+    //   x:-30
+    // })
     gsap.to(group.scale,{
       y:0.8,
       x:0.8,
