@@ -15,11 +15,11 @@ app
     //   y:-10,
     //   x:-30
     // })
-    gsap.to(group.scale,{
-      y:0.8,
-      x:0.8,
-      z:0.8
-    })
+    // gsap.to(group.scale,{
+    //   y:0.8,
+    //   x:0.8,
+    //   z:0.8
+    // })
     
     gsap.timeline({
         scrollTrigger: {
