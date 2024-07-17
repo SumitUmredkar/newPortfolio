@@ -4,8 +4,7 @@ import { Application } from "https://esm.sh/@splinetool/runtime";
 const canvas = document.getElementById("canvas3d");
 const app = new Application(canvas);
 gsap.to("canvas3d",{
-  x:100,
-  y:-900
+  x:100
 })
 app
   .load("https://prod.spline.design/ZMOBjX-ByeSbXJL8/scene.splinecode")
