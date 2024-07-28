@@ -73,29 +73,3 @@ gsap.from("#navigate a", {
   stagger: 0.2,
 });
 
-
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-ScrollTrigger.normalizeScroll(true)
-
-// create the smooth scroller FIRST!
-let smoother = ScrollSmoother.create({
-  smooth: 2,
-  effects: true,
-  normalizeScroll: true
-});
-
-ScrollTrigger.create({
-  trigger: "main",
-  pin: true,
-  start: "start start",
-  end: "bottom bottom"
-});
-
-ScrollTrigger.create({
-  trigger: "projects",
-  pin: true,
-  start: "start start",
-  end: "bottom bottom"
-});
