@@ -1,17 +1,12 @@
-import * as THREE from 'three'; 
 import { Application } from "https://esm.sh/@splinetool/runtime";
 
 const canvas = document.getElementById("canvas3d");
 const app = new Application(canvas);
-gsap.to("canvas3d",{
-  x:100
-})
 app
   .load("https://prod.spline.design/ZMOBjX-ByeSbXJL8/scene.splinecode")
   .then(() => {
     const laptop = app.findObjectByName("macBook");
     const group=app.findObjectByName("Group");
-   
     
     gsap.timeline({
         scrollTrigger: {
@@ -78,3 +73,29 @@ gsap.from("#navigate a", {
   stagger: 0.2,
 });
 
+
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+ScrollTrigger.normalizeScroll(true)
+
+// create the smooth scroller FIRST!
+let smoother = ScrollSmoother.create({
+  smooth: 2,
+  effects: true,
+  normalizeScroll: true
+});
+
+ScrollTrigger.create({
+  trigger: "main",
+  pin: true,
+  start: "start start",
+  end: "bottom bottom"
+});
+
+ScrollTrigger.create({
+  trigger: "projects",
+  pin: true,
+  start: "start start",
+  end: "bottom bottom"
+});

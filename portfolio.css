@@ -15,9 +15,12 @@ body {
 
 #main {
   overflow: hidden;
-  height: 600vh;
+  height: 350vh;
   width:auto;
-  background-color: darkgray;
+  background-image: url("download\ \(3\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain ;
 }
 header {
   z-index: 4;
@@ -68,6 +71,18 @@ header a:hover {
   background-color: rgba(0, 0, 0, 0.703); /* Adjust the opacity as needed */
   z-index: 1;
 }
+
+#main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 350vh;
+  width: 98.5vw;
+  background-color: rgba(0, 0, 0, 0.354); /* Adjust the opacity as needed */
+  z-index: 0;
+}
+
 
 #bold {
   display: flex;
@@ -145,8 +160,8 @@ header a:hover {
 #heading{
   position :relative;
   font-size: 9vw;
-  left:-22vw;
-  top:-2vw;
+  left:-20vw;
+  top:0vw;
   letter-spacing: 2px;
   z-index: 3;
   width:fit-content;
@@ -163,7 +178,7 @@ header a:hover {
 }
 
 #container1{
-  z-index: -1;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -212,28 +227,60 @@ header a:hover {
 }
 
 #projects{
-  /* z-index: -1; */
+  z-index: 1;
   position: relative;
   /* top:-20vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height:200vh;
+  height:120vh;
   width:100vw;
-}
-#project1{
-  height: 80vh;
-  width:100vw;
-  background-color: aquamarine;
-}
-#project2{
-  height: 80vh;
-  width:100vw;
-  background-color: blue;
 }
 
+#imagecontainer{
+  display: flex;
+  overflow: hidden;
+  border-radius: 10%;
+  position: absolute;
+  left: 2.5%;
+  width:50vw;
+  height: 60vh;
+  background-color: black;
+}
 
+#image1{
+  object-fit: cover;
+  z-index: 5;
+  position: absolute;
+  padding: 10px;
+  width:50vw;
+  height:60vh;
+}
+video{
+  height:100%;
+  width:100%;
+}
+  #txtcontainer {
+      height: 60vh;
+      width: 42vw;
+      text-transform: capitalize;
+      font-size: larger;
+      position: relative;
+      top: 15vh;
+      left: 25vw;
+      text-align: justify;
+}
+footer{
+  text-align: center;
+  text-decoration: underline wavy;
+  font-size: 15px;
+  background-image: linear-gradient(to right,blue black ,blue);
+  text-transform:uppercase;
+  font-family: "Playwrite BE VLG", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 @-webkit-keyframes move {
   0% {

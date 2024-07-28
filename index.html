@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Canvas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,80 +14,113 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="portfolio.css" />
-
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.156.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.156.0/examples/jsm/"
-        }
-      }
-    </script>
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"
+    ></script>
   </head>
 
   <body>
-    <div id="main">
-        <!-- <audio src="WhatsApp Audio 2024-07-08 at 10.43.28 PM.mpeg.mp3" autoplay ></audio> -->
-        <div id="container">
-          <header>
-            <a href="">Resume</a>
-            <div id="navigate">
-              <a href="#container">Home</a>
-              <a href="#bio">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#footer">Contact</a>
-            </div>
-          </header>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div id="main">
+         
+          <div id="container">
+            <header>
+              <a href="">Resume</a>
+              <div id="navigate">
+                <a href="#container">Home</a>
+                <a href="#bio">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#footer">Contact</a>
+              </div>
+            </header>
 
-          <div id="bold">
-            <span id="name1">Sumit</span>
-            <span id="name2"> Umredkar</span>
+            <div id="bold">
+              <span id="name1" data-lag="0.4">Sumit</span>
+              <span id="name2" data-lag="0.4"> Umredkar</span>
+            </div>
+            <div id="first-centre">
+              <span id="heading" data-lag="0.3">
+                <h1>PORTFOLIO</h1>
+              </span>
+              <section id="arc">
+                <canvas id="canvas3d">
+                  <!-- <audio autoplay src="iron-man-repulsor-157371.mp3"></audio> -->
+                </canvas>
+              </section>
+            </div>
+            <div id="info" style="--time: 9s">
+              <div>
+                <span>Web Designer &</span>
+                <span>software Engineer</span>
+              </div>
+              <div>
+                <span>Web Designer &</span>
+                <span>software Engineer</span>
+              </div>
+            </div>
           </div>
-          <div id="first-centre">
-            <span id="heading">
-              <h1>PORTFOLIO</h1>
-            </span>
-            <section id="arc">
-              <canvas id="canvas3d">
-                <!-- <audio autoplay src="iron-man-repulsor-157371.mp3"></audio> -->
-              </canvas>
+          <div id="container1">
+            <section id="bio">
+              <span id="bio1">hello everyone,</span> <br />
+              <span id="bio2"
+                >Myself Sumit Umredkar, student at
+                <b><i>Thadomal Shahani Engineering College</i></b
+                >,persuing Bachelor of Engineering (BE) in the field of
+                <b
+                  ><i>Electronics and Telecommunication Engineering</i></b
+                ></span
+              >
+            </section>
+            <section id="profile" data-lag="0.5">
+              <img
+                src="WhatsApp Image 2024-07-09 at 12.07.15 AM.jpeg"
+                alt="MY Profile Picture"
+              />
             </section>
           </div>
-          <div id="info" style="--time: 9s">
-            <div>
-              <span>Web Designer &</span>
-              <span>software Engineer</span>
-            </div>
-            <div>
-              <span>Web Designer &</span>
-              <span>software Engineer</span>
+          <div id="smooth-wrapper">
+            <div id="smooth-content">
+              <div id="projects">
+                <div id="imagecontainer" data-lag="0.4">
+                  <link rel="stylesheet" href="">
+                  <div id="image1">
+                    <video
+                      src="WhatsApp Video 2024-07-28 at 1.44.42 PM.mp4"
+                      autoplay
+                      muted
+                    ></video>
+                  </div>
+                </div>
+                <div id="txtcontainer" data-lag="0.2">
+                  <div id="text1">
+                    <p>
+                      A team project where, me and my team had re-imagined a</p>
+                    <p>  watch brand to compete in a
+                      <b>Frontend Web Development</p> <p>Hackathon</b> arranged by
+                      <b>Sheryians</b>. While in the making of this</p> <p>website i
+                      got to explore various JavaScript Libraries as
+                      <b><i>Green</p> <p>Sock Animation Platform(GSAP)</i></b> and
+                      <b><i>LocomotiveJS</i></b> for</p> animation and smooth
+                      scrolling.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <footer>
+            <h1>
+              More Projects TO Come
+            </h1>
+          </footer>
         </div>
-        <div id="container1">
-          <section id="bio">
-            <span id="bio1">hello everyone,</span> <br />
-            <span id="bio2"
-              >Myself Sumit Umredkar, student at
-              <b><i>Thadomal Shahani Engineering College</i></b
-              >,persuing Bachelor of Engineering (BE) in the field of
-              <b><i>Electronics and Telecommunication Engineering</i></b></span
-            >
-          </section>
-          <section id="profile">
-            <img
-              src="WhatsApp Image 2024-07-09 at 12.07.15 AM.jpeg"
-              alt="MY Profile Picture"
-            />
-          </section>
-        </div>
-        <div id="projects">
-          <section id="project1"></section>
-
-          <section id="project2"></section>
-        </div>
+      </div>
     </div>
-   
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollToPlugin.min.js"></script>
+    <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
