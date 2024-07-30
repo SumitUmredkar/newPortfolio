@@ -72,18 +72,6 @@ header a:hover {
   z-index: 1;
 }
 
-#main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 250vh;
-  width: 98.5vw;
-  background-color: rgba(0, 0, 0, 0.354); /* Adjust the opacity as needed */
-  z-index: 0;
-}
-
-
 #bold {
   display: flex;
   flex-direction: column;
