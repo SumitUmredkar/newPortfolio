@@ -2,37 +2,36 @@ import { Application } from "https://esm.sh/@splinetool/runtime";
 
 const canvas = document.getElementById("canvas3d");
 const app = new Application(canvas);
-app
-  .load("https://prod.spline.design/ZMOBjX-ByeSbXJL8/scene.splinecode")
-  .then(() => {
-    const laptop = app.findObjectByName("macBook");
-    const group=app.findObjectByName("Group");
+app.load("https://prod.spline.design/ZMOBjX-ByeSbXJL8/scene.splinecode");
+  // .then(() => {
+  //   const laptop = app.findObjectByName("macBook");
+  //   const group=app.findObjectByName("Group");
     
-    gsap.timeline({
-        scrollTrigger: {
-          trigger: "#arc",
-          scroller: "body",
-          scrub: true,
-          start: "40% 9%",
-          end: "80% 12%"
-          }
-    })
-      .to(laptop.position, { x: -520, y: -1570 }, 0)
-      .to(laptop.rotation, { y: Math.PI / 1 }, 0)
-      .to(laptop.scale, { x: 1.2, y: 1.2, z: 1.2 }, 0);
+  //   gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: "#arc",
+  //         scroller: "body",
+  //         scrub: true,
+  //         start: "40% 9%",
+  //         end: "80% 12%"
+  //         }
+  //   })
+  //     .to(laptop.position, { x: -520, y: -1570 }, 0)
+  //     .to(laptop.rotation, { y: Math.PI / 1 }, 0)
+  //     .to(laptop.scale, { x: 1.2, y: 1.2, z: 1.2 }, 0);
 
-    gsap.timeline({
-        scrollTrigger: {
-          trigger: "#arc",
-          scroller: "body",
-          scrub: true,
-          start: "75% 13%",
-          end: "80% 2%"
-        }
-      })
-      .to(laptop.rotation, { y: Math.PI /0.8,z: Math.PI /1}, 0)
-      .to(laptop.position, { x: 270, y: -2100 }, 0);
-  });
+  //   gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: "#arc",
+  //         scroller: "body",
+  //         scrub: true,
+  //         start: "75% 13%",
+  //         end: "80% 2%"
+  //       }
+  //     })
+  //     .to(laptop.rotation, { y: Math.PI /0.8,z: Math.PI /1}, 0)
+  //     .to(laptop.position, { x: 270, y: -2100 }, 0);
+  // });
 
 const heading = document.getElementById("heading");
 
