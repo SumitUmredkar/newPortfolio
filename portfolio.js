@@ -1,8 +1,8 @@
-// import { Application } from "https://esm.sh/@splinetool/runtime";
+import { Application } from "https://esm.sh/@splinetool/runtime";
 
-// const canvas = document.getElementById("canvas3d");
-// const app = new Application(canvas);
-// app.load("https://prod.spline.design/ZMOBjX-ByeSbXJL8/scene.splinecode");
+const canvas = document.getElementById("canvas3d");
+const app = new Application(canvas);
+app.load("https://prod.spline.design/ZMOBjX-ByeSbXJL8/scene.splinecode");
   // .then(() => {
   //   const laptop = app.findObjectByName("macBook");
   //   const group=app.findObjectByName("Group");
